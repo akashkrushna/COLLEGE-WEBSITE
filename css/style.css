@@ -1,0 +1,427 @@
+/* For All  */
+.content {
+  text-align: center;
+  margin: 60px auto;
+}
+.content h6 {
+  font-weight: 600;
+  font-size: 2.3em;
+}
+.content h6 span {
+  font-weight: 800;
+  color: #dc3445;
+  font-size: 2.5em;
+}
+.content h6::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #dc3445;
+  width: 200px;
+  height: 2px;
+  margin-left: 455px;
+}
+
+/* Navbar Section Start */
+.navbar {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.9s ease-in-out;
+}
+.navbar.scroll {
+  background: #000;
+  padding: 5px;
+}
+.navbar-brand {
+  font-weight: 600;
+  font-size: 2.2em;
+  color: #fff !important;
+  padding-left: 50px;
+}
+.navbar-brand span {
+  font-weight: 800;
+  font-size: 2.3em;
+  color: #dc3445;
+}
+.navbar-nav {
+  padding-right: 50px;
+}
+.nav-link {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #fff !important;
+  text-transform: capitalize;
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  background: #dc3445;
+  height: 2px;
+  width: 0;
+  display: block;
+  margin-left: 1px;
+  position: absolute;
+  transition: 0.9s;
+}
+.nav-link:hover::after {
+  width: 50px !important;
+}
+.nav-item .btn {
+  width: 100px;
+  border-radius: 20px;
+}
+/* Navbar Section End */
+
+/* Header Section Start */
+.header {
+  margin: 0;
+  padding: 0;
+}
+.header .vid-parent {
+  position: relative;
+}
+.header video {
+  height: 100%;
+  width: 100%;
+}
+.header .vid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.3;
+}
+.header img {
+  height: 100vh;
+  width: 100%;
+}
+
+.header .vid-content {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: #000;
+  padding: 30px;
+  border-radius: 20px;
+  transition: 1s ease-out;
+  opacity: 0;
+}
+.header .vid-content:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.header .vid-content h6 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.header .vid-content span {
+  font-weight: bold;
+  font-size: 12px;
+}
+.header .vid-content a {
+  margin: 10px 30px;
+  width: 200px;
+  border-radius: 20px;
+  transition: 0.7s;
+  letter-spacing: 2px;
+}
+.header .vid-content a:hover {
+  background: none;
+  color: #dc3445 !important;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+/* Header Section End */
+
+/* About us Section Start */
+.about-us {
+  margin: 300px auto;
+  position: relative;
+}
+.about-us .col-sm-5 h6 {
+  font-weight: 800;
+  font-size: 40px;
+  color: #dc3445;
+  margin: 30px auto;
+}
+.about-us .col-sm-5 p {
+  font-weight: 700;
+  font-size: 12px;
+  margin: 14px auto !important;
+}
+.about-us .col-sm-5 button {
+  font-weight: bold;
+  width: 200px;
+  border-radius: 15px;
+  transition: 0.9s ease-in-out;
+}
+.about-us .col-sm-5 button:hover {
+  width: 250px;
+  font-weight: 900;
+  background: none;
+  color: #dc3445;
+  letter-spacing: 10px;
+}
+.about-us .col-sm-5 video {
+  height: 500px;
+  border-radius: 10px;
+}
+.about-us .col-sm-5 .vid-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-us .col-sm-5 .vid-content h6 {
+  color: #fff;
+  background: #000;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 400px;
+  text-align: center;
+}
+/* About us Section End */
+
+/* Services Section Start */
+.services {
+  margin: 300px auto;
+}
+.services .col-sm-4 {
+  margin-bottom: 70px;
+}
+.services .col-sm-4 .box {
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.4),
+    inset 10px 10px 10px -10px rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.9s ease-out;
+}
+.services .col-sm-4 .box:hover {
+  background: #000;
+  color: #fff !important;
+}
+.services .col-sm-4 .box h6 {
+  font-weight: bold;
+  color: #dc3445;
+  font-size: 20px;
+  margin: 10px auto;
+}
+.services .col-sm-4 .box span {
+  font-weight: bold;
+  font-size: 12px;
+}
+/* Services Section End */
+
+/* Contact us Section Start */
+.contact_us {
+  margin: 300px auto;
+}
+.contact_us .col-sm-5 {
+  background-color: rgb(192, 189, 189);
+  padding: 50px;
+  border-radius: 14px;
+  transition: 1s ease;
+}
+.contact_us .col-sm-5:hover {
+  background: #000;
+  color: #fff !important;
+}
+.contact_us button {
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.9s ease-in-out;
+}
+.contact_us input {
+  border-radius: 10px;
+  background: none !important;
+  color: #fff !important;
+  outline: none !important;
+}
+.contact_us .col-sm-5:hover input::placeholder {
+  color: #fff !important;
+}
+.contact_us button:hover {
+  background: none;
+  color: #dc3445;
+  letter-spacing: 12px;
+}
+/* Contact us Section End */
+
+/* Footer Section Start */
+footer {
+  background: #000;
+  padding: 150px;
+}
+footer a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none !important;
+  margin-left: 100px;
+}
+/* Footer Section End */
+
+/* ==========================
+  FOR MODEL SECTION START
+ ===========================*/
+
+/* For Modal of College Virtual Tour Start */
+#college_virtual_tour .modal-body {
+  transition: 1s ease-in;
+}
+#college_virtual_tour .modal-body:hover {
+  color: #fff !important;
+  background: #000 !important;
+  cursor: pointer;
+}
+#college_virtual_tour .float-right a {
+  width: 150px !important;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+}
+#college_virtual_tour .float-right a:hover {
+  background: none;
+  color: green !important;
+  letter-spacing: 3px;
+}
+/* For Modal of College Virtual Tour End */
+
+/* For Modal of About us Read Start*/
+
+#about_us_popup h6 {
+  font-weight: 600;
+  font-size: 1.8em;
+  margin: 30px auto;
+}
+#about_us_popup h6 span {
+  font-weight: 800;
+  font-size: 2em;
+  color: #dc3445;
+}
+#about_us_popup p {
+  font-weight: bolder;
+  font-size: 13px;
+}
+/* For Modal of About us Read End */
+
+/* ==========================
+  FOR MODEL SECTION END
+ ===========================*/
+
+/* =========================
+  COLLEGE FEST PAGE START
+============================*/
+
+.college_fest_page .fest_header {
+  margin: 0;
+  padding: 0;
+}
+.college_fest_page .fest_header .img-parent {
+  position: relative;
+}
+.college_fest_page .fest_header img {
+  height: 50vh;
+  width: 100%;
+}
+.college_fest_page .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#dc3445, #3498db);
+  opacity: 0.3;
+}
+.college_fest_page .img-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.college_fest_page .img-content h6 {
+  font-weight: bold;
+  font-size: 40px;
+  background: linear-gradient(#3498db, #dc3445);
+  padding: 20px;
+  width: 600px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 1s ease-in-out;
+}
+.college_fest_page .img-content h6:hover {
+  background: linear-gradient(#dc3445, #3498db);
+  letter-spacing: 20px;
+  cursor: pointer;
+}
+.college_fest_page .details {
+  margin: 100px auto;
+}
+.college_fest_page .details .col-sm-4 {
+  margin-bottom: 70px;
+}
+.college_fest_page h2 {
+  margin-top: 100px;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+}
+.college_fest_page .overlay {
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 93%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: rgba(266, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+  cursor: pointer;
+}
+.college_fest_page .overlay:hover {
+  opacity: 1;
+}
+.college_fest_page .links {
+  margin-bottom: 100px;
+}
+.college_fest_page .links .col-sm-5 img {
+  height: 500px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.college_fest_page .links .col-sm-5 h6 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 5px auto;
+}
+.college_fest_page .links .col-sm-5 h6 span {
+  font-weight: 800;
+  font-size: 1.9em;
+  color: #dc3445;
+  text-align: left;
+}
+.college_fest_page .links .col-sm-5 p {
+  font-weight: 500;
+  font-size: 12px;
+  margin: 30px auto;
+}
+.college_fest_page .links .second {
+  margin-top: 100px !important;
+}
+/*========================== 
+   COLLEGE FEST PAGE END
+=============================*/
