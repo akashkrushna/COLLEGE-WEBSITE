@@ -1,0 +1,157 @@
+/* Navbar Section Start */
+.navbar {
+  padding: 1px;
+  display: flex;
+  background: #000;
+  justify-content: space-between;
+}
+.navbar-brand {
+  font-weight: 600;
+  padding: 2% 5%;
+  font-size: 2em;
+  color: #fff !important;
+}
+.navbar-brand span {
+  font-weight: 800;
+  font-size: 2.2em;
+  color: #dc3445;
+}
+.navbar-nav {
+  padding: 30px 50px;
+}
+.nav-link {
+  font-weight: bold;
+  color: #fff !important;
+  margin-left: 25px;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  background: #dc3445;
+  height: 2px;
+  width: 0%;
+  transition: 0.6s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+/* Navbar Section End */
+
+/* Header Section Start */
+.header {
+  margin: 0;
+  padding: 0;
+}
+.header .img-parent {
+  position: relative;
+}
+.header img {
+  height: 50vh;
+  width: 100%;
+}
+.header .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.6;
+}
+.header .img-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.header .img-content h6 {
+  font-weight: 600;
+  font-size: 2em;
+  margin: 20px auto;
+}
+.header .img-content h6 span {
+  font-weight: 800;
+  font-size: 2.3em;
+  color: #dc3445;
+}
+.header .img-content p {
+  font-weight: bold;
+  font-size: 12px;
+}
+.header .img-content a {
+  font-weight: bold;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 12px 40px;
+  outline: none !important;
+  border-radius: 10px;
+}
+.header .img-content a:hover {
+  background: #fff;
+  color: #dc3445;
+}
+/* Header Section End */
+
+/* Footer Section Start */
+footer {
+  background: #000;
+  padding: 100px;
+  margin-top: 200px;
+}
+footer a {
+  font-weight: bold;
+  margin-left: 100px;
+  color: #fff !important;
+  text-decoration: none;
+}
+/* Footer Section End */
+
+/*==========================
+ GARDEN TOUR SECTION START 
+============================*/
+.garden_tour {
+  margin: 100px auto;
+}
+.garden_tour .col-sm-5 img {
+  height: 500px;
+  border-radius: 20px;
+}
+.garden_tour .col-sm-5 h6 {
+  font-weight: 700;
+  font-size: 2em;
+}
+.garden_tour .col-sm-5 h6 span {
+  font-weight: 800;
+  font-size: 2.1em;
+  color: #dc3445;
+}
+.garden_tour .col-sm-5 p {
+  font-size: 13px;
+}
+.carousel img {
+  cursor: pointer;
+}
+
+.carousel .content:hover {
+  opacity: 0.4;
+}
+#garden_tour_popup .modal-bodyfd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+}
+#garden_tour_popup a {
+  color: #fff;
+}
+
+#garden_tour_popup .modal-bodyfd img {
+  min-height: 500px;
+}
+/*==========================
+ GARDEN TOUR SECTION END
+============================*/
